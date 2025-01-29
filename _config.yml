@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Pcyoung's Blog"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatarImage.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Pcyoung의 Study Blog 입니다"
   location         : "South Korea"
   email            : "pcy35549@gmail.com"
