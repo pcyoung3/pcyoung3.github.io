@@ -1,15 +1,16 @@
 ---
 layout: single
-title: Second Post
-categories: obsidian
-tag: [ObsidianUsage, obsidian]
+title: Udemy 자막 (Deprecated)
+categories: etc
+tag: [etc, 강의]
 
 toc: true
 toc_sticky: true
 ---
    
 Udemy 한글자막 보는 법 참고
-https://fomaios.tistory.com/entry/Udemy-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%95%9C%EA%B8%80-%EC%9E%90%EB%A7%89%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%8A%94-%EB%B0%A9%EB%B2%95featChrome
+
+[참고링크](https://fomaios.tistory.com/entry/Udemy-%EC%8B%A4%EC%8B%9C%EA%B0%84-%ED%95%9C%EA%B8%80-%EC%9E%90%EB%A7%89%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%8A%94-%EB%B0%A9%EB%B2%95featChrome)
 
 ```
 if(typeof window.i==='undefined'){clearInterval(window.i)}
@@ -24,7 +25,7 @@ if(lastText!==currentText){toEl.innerText= currentText}lastText=fromEl.innerText
 ```
 
 
-* Plugin : https://udemy.wjtb.co.kr/notice/id/1772
+* Plugin : [링크](https://udemy.wjtb.co.kr/notice/id/1772)
 
 2023/11/16 이후로 작동안됨
 다음 코드 사용
