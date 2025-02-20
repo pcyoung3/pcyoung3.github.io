@@ -182,7 +182,7 @@ int main()
 ### 4-4. reinterpret_cast
 > [!todo] [[Cast 연산자#1. reinterpret_cast]] 참고
 
-[my link](/Cpp/CppSolid)
+[my link](/cpp/CppSolid)
 
 ```cpp
 #include <bits/stdc++.h>
