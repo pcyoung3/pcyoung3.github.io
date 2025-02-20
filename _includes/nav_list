@@ -10,6 +10,13 @@
       전체 글 수 {{sum}} 개
     </li>
     <span class="nav__sub-title">Cpp</span>
+    <ul>
+      {% for category in site.categories %}
+        {% if category[0] == "cpp" %}
+          <li><a href="/categories/cpp" class="">CPP ({{category[1].size}})</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
     <span class="nav__sub-title">그 외의 것들</span>
     <ul>
       {% for category in site.categories %}
