@@ -48,20 +48,24 @@ int main()
 ```
 이 때 `int (&ref)[3]`의 reference는 int형의 크기가 3인 배열만 받을 수 있다.
 만약 `int (&ref)[5]`라면 int형의 크기가 5인 배열만 받을 수 있다
+
    
    
+
 ## 3. 상수값(literal)을 받는 Referece
 ### 3-1. 상수값을 Reference로 받는 방법
 Reference형으로 리터럴을 받게 되면 오류가 발생한다
+
 ```cpp
 int& ref = 10;
 string& refStr = "Hello";
 ```
 해당 코드는 오류가 난다
+
 왜냐하면 reference형으로 받게되면 수정이 가능하다는 뜻이고
 위의 코드의 경우 상수 `10`, 또는 문자열 `Hello`가 있는 Data 공간을 수정할 수 있게된다는 뜻이다.
-따라서 리터럴은 Reference로 받을 수 없다
 
+따라서 리터럴은 Reference로 받을 수 없다 <br>
 하지만 const & 형으로는 상수값도 받을 수 있다
 ```cpp
 #include <bits/stdc++.h>
@@ -80,14 +84,21 @@ int main()
 ### 3-2. 함수의 Return값을 받는 방법
 const &형의 또다른 특징으로는 함수의 상수 return 값을 받을 수 있다는 점이다.
 
-> [!danger] 일반 상수값을 Return 하는 함수를 단순 Reference로는 받을 수 없다
-> 기본적으로는 함수에서 상수값을 return 한다면 복사로 전달됨
-> 복사된 값은 임시객체의 형식으로 해당 줄에서만 생존하기 때문에 Reference로 받게 되면
-> Dangling Reference가 된다
+<div class="notice--danger" markdown="1">
+**<u>일반 상수값을 Return 하는 함수를 단순 Reference로는 받을 수 없다</u>** 
 
-> [!tip] const & 사용 시의 함수의 일반 상수도 받을 수 있다
-> const &형을 사용하게되면 예외로 함수의 Return 값의 생명이 연장된다.
-> 해당 생명은 Reference 함수가 사라질 때까지 연장됨
+기본적으로는 함수에서 상수값을 return 한다면 복사로 전달됨
+복사된 값은 임시객체의 형식으로 해당 줄에서만 생존하기 때문에 Reference로 받게 되면
+Dangling Reference가 된다
+</div>
+
+<div class="notice--info" markdown="1">
+**<u>const & 사용 시의 함수의 일반 상수도 받을 수 있다</u>** 
+
+const &형을 사용하게되면 예외로 함수의 Return 값의 생명이 연장된다.
+해당 생명은 Reference 함수가 사라질 때까지 연장됨
+</div>
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -130,10 +141,16 @@ int main()
 }
 ```
 
+
+
 ### 4-2. dynamic_cast
-> [!tip] pointer의 dynamic_cast와 차이점이 있다
-> pointer의 dynamic_cast의 경우 실패하면 null을 return 한다
-> reference의 dynamic_cast의 경우 실패하면 bad_cast 예외를 발생시킨다
+<div class="notice--danger" markdown="1">
+**<u>pointer의 dynamic_cast와 차이점이 있다</u>** 
+
+pointer의 dynamic_cast의 경우 실패하면 null을 return 한다
+reference의 dynamic_cast의 경우 실패하면 bad_cast 예외를 발생시킨다
+</div>
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -180,9 +197,8 @@ int main()
 ```
    
 ### 4-4. reinterpret_cast
-> [!todo] [[Cast 연산자#1. reinterpret_cast]] 참고
-
-[my link](/cpp/CppSolid)
+[reinterpret_cast 참고](/cpp/CppCasting/#1-reinterpret_cast)
+{: .notice--primary} 
 
 ```cpp
 #include <bits/stdc++.h>
