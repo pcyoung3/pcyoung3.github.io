@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 이득우 Framework 10강 게임데이터 관리
-categories: unrealLecture
+categories: unrealLecture02
 tag: [unreal, unrealLecture]
 
 toc: true
