@@ -12,11 +12,11 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         
-        <!-- 방문자수 (His) -->
+        <!-- 방문자수 (Hits) -->
         <div style="text-align: center;">
-          <a href="https://hits.seeyoufarm.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"target="_blank">
-          <img 
-              src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&count_bg=%23000000&title_bg=%23000000&icon=openstreetmap.svg&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/>
+          <!-- <a href="https://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"target="_blank"> -->
+          <!-- <img src="https://hits.dwyl.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&count_bg=%23000000&title_bg=%23000000&icon=openstreetmap.svg&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/> -->
+              <img src="https://hitscounter.dev/api/hit?url=site.url%2F&label=visitor&icon=signpost&color=%23160d27">
           </a>
         </div>
 
