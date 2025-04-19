@@ -17,9 +17,21 @@
         {% endif %}
       {% endfor %}
     </ul>
+    <span class="nav__sub-title">알고리즘</span>
+    <ul>
+      <li><a href="/categories/algorithmTheory" class="">알고리즘 이론 ({{ site.categories.algorithmTheory | size }})</a></li>
+      <li><a href="/categories/algorithmProblems" class="">알고리즘 문제풀이 ({{ site.categories.algorithmProblems | size }})</a></li>
+    </ul>
+    <span class="nav__sub-title">CS</span>
+    <ul>
+      <li><a href="/categories/cs" class="">CS 이론 ({{ site.categories.cs | size }})</a></li>
+    </ul>
     <span class="nav__sub-title">언리얼</span>
     <ul>
-      {% for category in site.categories %}
+      <li><a href="/categories/unrealTheory" class="">Unreal 이론 ({{ site.categories.unrealTheory | size }})</a></li>
+      <li><a href="/categories/unrealLecture01" class="">C++ 강의 ({{ site.categories.unrealLecture01 | size }})</a></li>
+      <li><a href="/categories/unrealLecture02" class="">Framework 강의 ({{ site.categories.unrealLecture02 | size }})</a></li>
+      <!-- {% for category in site.categories %}
         {% if category[0] == "unrealTheory" %}
           <li><a href="/categories/unrealTheory" class="">Unreal 이론 ({{category[1].size}})</a></li>
         {% endif %}
@@ -29,7 +41,7 @@
         {% if category[0] == "unrealLecture02" %}
           <li><a href="/categories/unrealLecture02" class="">Framework 강의 ({{category[1].size}})</a></li>
         {% endif %}
-      {% endfor %}
+      {% endfor %} -->
     </ul>
     <span class="nav__sub-title">그 외의 것들</span>
     <ul>
