@@ -36,7 +36,10 @@ TSharedRef<FJsonObject> JsonObjectSrc = MakeShared<FJsonObject>();
 TSharedPtr<FJsonObject> JsonObjectDest;
 JsonObjectDest.ToSharedRef()
 ```
-* C++의 [[Smart Pointer]] 참고
+* C++의 [Smart Pointer](/cpp/cpp04-2/) 참고
+
+
+
    
    
 

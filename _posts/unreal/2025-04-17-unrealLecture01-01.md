@@ -123,10 +123,10 @@ UE_LOG(LogTemp, Log, TEXT("%s"), *FloatIntString2);		//Int:32 Float:3.141592
 {: .notice--primary} 
 
 1. cpp 파일을 다른이름으 저장한다(Save as..)
-2. 저장 방식에서 옆에 화살표를 누른 뒤 인코딩하여 저장을 클릭
-![[Pasted image 20230516225053.png]]
-3.  UTF-8 로 저장
-![[Pasted image 20230516225130.png]]
+2. 저장 방식에서 옆에 화살표를 누른 뒤 인코딩하여 저장을 클릭<br>
+![Image](https://github.com/user-attachments/assets/260b2c4a-9781-4e17-abff-85556a5e89d6)<br>
+3.  UTF-8 로 저장<br>
+![Image](https://github.com/user-attachments/assets/dd364f70-88a4-46f0-ac81-57d5dedb10c4)
    
    
 
