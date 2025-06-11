@@ -23,10 +23,10 @@ cout << s;
 ## cin, cout 의 최적화
 cin, cout을 쓸 때 주의점
 {: .notice--info}
-```cpp
+{% highlight cpp linenos %}
 ios::sync_with_stdio(0)    // c, c++ 의 string stream 동기화 함수 -> 동기화 기능을 끄겠다는 뜻 : 이 호출 이후 printf/scanf 를 사용하면 안됨
 cin.tie(0)                 // 버퍼를 모으지 않고 cin의 버퍼를 비워주는 함수 -> 인데 어짜피 출력값만 보일 것이기 때문에 기능을 끈다
-```
+{% endhighlight %}
 해당 함수를 호출 후 사용
    
    
